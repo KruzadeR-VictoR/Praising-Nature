@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(black)), url("https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), black), url("https://images.pexels.com/photos/1438761/pexels-photo-1438761.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 5;
+}
+
+.box1 h1 {
+  font-size: 3.5rem;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  -webkit-text-stroke: 2px blue;
+  color: whitesmoke;
+}
+
+.box1 .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
+
+.box1 .navbar .logo {
+  cursor: pointer;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  left: 50px;
+}
+
+.box1 .navbar .logo img {
+  height: 100%;
+}
+
+.box1 .navbar .navlinks {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  left: 20%;
+}
+
+.box1 .navbar .navlinks li {
+  list-style: none;
+  margin: 50px;
+  font-size: 1.3rem;
+  font-family: "Source Code Pro", monospace;
+  letter-spacing: 2px;
+}
+
+.box1 .navbar .navlinks li a {
+  text-decoration: none;
+  color: whitesmoke;
+  position: relative;
+}
+
+.box1 .navbar .navlinks a:hover::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: -20px;
+}
+
+.box1 .navbar .navlinks .search {
+  position: relative;
+  cursor: pointer;
+  height: 20px;
+  left: 30px;
+}
+
+.box1 .navbar .navlinks .search:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 250ms ease-in;
+  transition: -webkit-transform 250ms ease-in;
+  transition: transform 250ms ease-in;
+  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+}
+
+.box1 video {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: screen;
+  z-index: -1;
+}
+
+.box2 {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/3607934/pexels-photo-3607934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+}
+
+.box2 video, .box3 video {
+  height: 100vh;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+.box3 {
+  height: 100vh;
+  background: url("https://images.pexels.com/photos/3207379/pexels-photo-3207379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=style.css.map */
